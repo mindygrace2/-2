@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звёзды и созвездия</title>
+    <style>
+        body{margin:0;font-family:Arial,sans-serif;background:url("space-bg.jpg") no-repeat center center fixed;background-size:cover;color:#5472ce;min-height:100vh}
+        .top-menu{width:100%;background:rgba(21,27,112,0.692);padding:15px 0;position:fixed;top:0;backdrop-filter:blur(4px);z-index:1000}
+        .top-menu nav{width:90%;margin:0 auto;display:flex;justify-content:flex-end;gap:30px}
+        .top-menu a{text-decoration:none;color:#a1a8e2;font-size:18px;transition:.3s}
+        .top-menu a:hover{color:#fff;transform:scale(1.05)}
+        .top-menu .active{color:#fff;font-weight:bold}
+        .container{padding-top:130px;max-width:1200px;margin:0 auto;padding:0 20px}
+        h1{text-align:center;font-size:46px;color:#a1c4ff;text-shadow:0 0 20px rgba(161,196,255,.7);margin-bottom:60px}
+        .stars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px}
+        .star-card{background:rgba(20,30,90,.75);border-radius:18px;padding:26px;border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(10px);transition:all .4s}
+        .star-card:hover{transform:translateY(-15px) scale(1.04);box-shadow:0 25px 50px rgba(80,120,255,.6);border-color:rgba(100,220,255,.9)}
+        .star-card h2{margin:0 0 15px;color:#fff;font-size:27px}
+        .star-card p{margin:8px 0;color:#c8ddff;line-height:1.6;font-size:17px}
+        .distance{color:#6dafff;font-weight:bold;font-size:18px}
+    </style>
+</head>
+<body>
+
+    <header class="top-menu">
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="планетыы.html">Планеты</a>
+            <a href="галереяя.html">Галерея</a>
+            <a href="космоМиссии.html" class="active">Миссии и будущее</a>
+            <a href="звезды.html" class="active">Звёзды и созвездия</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Звёзды и созвездия</h1>
+
+        <div class="stars-grid">
+
+            <div class="star-card">
+                <h2>Сириус</h2>
+                <p class="distance">8,6 световых лет</p>
+                <p>Самая яркая звезда ночного неба. Входит в созвездие Большого Пса.</p>
+            </div>
+
+            <div class="star-card">
+                <h2>Бетельгейзе</h2>
+                <p class="distance">≈ 640 световых лет</p>
+                <p>Красный сверхгигант в созвездии Ориона. В любой момент (по космическим меркам) может взорваться как сверхновая.</p>
+            </div>
+
+            <div class="star-card">
+                <h2>Полярная звезда</h2>
+                <p class="distance">≈ 430 световых лет</p>
+                <p>Указывает направление на север. Находится почти точно над Северным полюсом Земли.</p>
+            </div>
+
+            <div class="star-card">
+                <h2>Созвездие Орион</h2>
+                <p>Одно из самых ярких и узнаваемых созвездий. В нём находится знаменитая туманность Ориона.</p>
+            </div>
+
+            <div class="star-card">
+                <h2>Большая Медведица</h2>
+                <p>Семь ярких звёзд образуют «ковш». Через две крайние звезды ковша можно найти Полярную звезду.</p>
+            </div>
+
+            <div class="star-card">
+                <h2>Кассиопея</h2>
+                <p>Легко узнаётся по форме буквы «W» или «M». Видна круглый год в северном полушарии.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
